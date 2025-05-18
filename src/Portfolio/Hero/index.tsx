@@ -175,7 +175,8 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
             <Button>
               <a
-                href="https://drive.google.com/uc?export=download&id=18IiIDRN9jU7JW1BvWYG4xrI1dng3L7B0"
+                href="https://drive.google.com/uc?export=download&id=13eJ7M9AeGReG-zwv136SkzBnSgZohIaT"
+                // href="https://drive.google.com/uc?export=download&id=18IiIDRN9jU7JW1BvWYG4xrI1dng3L7B0"
                 download="Mubasshir_CV.pdf"
                 className="flex items-center gap-2 font-sansita"
               >
@@ -239,7 +240,8 @@ const HeroSection = () => {
             </div>
             <div className="flex-1 p-4 overflow-auto">
               <iframe
-                src="https://drive.google.com/file/d/18IiIDRN9jU7JW1BvWYG4xrI1dng3L7B0/preview"
+                src="https://drive.google.com/file/d/13eJ7M9AeGReG-zwv136SkzBnSgZohIaT/preview"
+                // src="https://drive.google.com/file/d/18IiIDRN9jU7JW1BvWYG4xrI1dng3L7B0/preview"
                 className="w-full h-full"
                 allow="autoplay"
                 title="Resume Preview"
