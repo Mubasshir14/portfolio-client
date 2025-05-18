@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Portfolio and Blog Website",
     description:
       "Professional full stack developer specializing in React, Next.js, and modern web technologies.",
-    url: "https://mubasshir-portfolio-five.vercel.app",
+    url: "https://developer-portfolio-eta-two.vercel.app/",
     siteName: "Mubasshir Portfolio",
     images: [
       {
