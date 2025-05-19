@@ -198,7 +198,7 @@
 
 // src/Portfolio/GetInTouch/index.tsx
 "use client";
-import React, { useState, useEffect, useRef } from "react"; // Add useEffect, useRef
+import React, { useState, useEffect, useRef } from "react"; 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -247,7 +247,6 @@ const GetInTouch = () => {
 
   useEffect(() => {
     if (emailInputRef.current) {
-      // Remove specific attributes added by extensions
       emailInputRef.current.removeAttribute("data-temp-mail-org");
       emailInputRef.current.style.backgroundImage = "";
       emailInputRef.current.style.backgroundRepeat = "";
@@ -258,17 +257,17 @@ const GetInTouch = () => {
   const sendEmail = async (data: FormData) => {
     setIsLoading(true);
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("https://getform.io/f/aologqpb", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      const result = await response.json();
+      
       if (response.ok) {
         toast.success("Message sent successfully!");
         form.reset();
       } else {
-        toast.error(result.message || "Failed to send message. Please try again!");
+        toast.error("Failed to send message. Please try again!");
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again!");
@@ -280,12 +279,12 @@ const GetInTouch = () => {
 
   return (
     <section
-      className={`max-w-screen-xl mx-auto py-16 px-4 bg-white dark:bg-gray-900 ${sansita.className}`}
+      className={`max-w-screen-xl mx-auto py-16 px-4  ${sansita.className}`}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
         Get in Touch
       </h2>
-      <div className="flex flex-col md:flex-row items-center gap-10 bg-white dark:bg-gray-800 p-6 md:p-10 rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-row items-center gap-10  p-6 md:p-10  ">
         <div className="w-full md:w-1/2">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(sendEmail)} className="space-y-6">
@@ -299,7 +298,7 @@ const GetInTouch = () => {
                       <Input
                         type="email"
                         placeholder="Your Email"
-                        className="rounded-xl border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500"
+                        className=" bg-base-100/80 backdrop-blur-sm rounded-md shadow-xl hover:shadow-2xl border border-primary/20 hover:border-primary/50  text-gray-900 dark:text-white h-10 px-1"
                         disabled={isLoading}
                         // ref={emailInputRef} 
                         {...field}
@@ -319,7 +318,7 @@ const GetInTouch = () => {
                       <Input
                         type="text"
                         placeholder="Subject"
-                        className="rounded-xl border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500"
+                        className="bg-base-100/80 backdrop-blur-sm rounded-md shadow-xl hover:shadow-2xl border border-primary/20 hover:border-primary/50  text-gray-900 dark:text-white h-10 px-1"
                         disabled={isLoading}
                         {...field}
                       />
@@ -338,7 +337,7 @@ const GetInTouch = () => {
                       <Textarea
                         placeholder="Your Message"
                         rows={5}
-                        className="rounded-xl border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white resize-none focus:ring-2 "
+                        className="bg-base-100/80 backdrop-blur-sm rounded-md shadow-xl hover:shadow-2xl border border-primary/20 hover:border-primary/50  text-gray-900 dark:text-white h-10 px-1 resize-none "
                         disabled={isLoading}
                         {...field}
                       />

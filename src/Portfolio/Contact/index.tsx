@@ -14,28 +14,28 @@ import {
 
 // Contact data (replace with your actual details)
 const contactInfo = {
-  email: "your.email@example.com",
-  mobile: "+1234567890",
+  email: "mubasshiralkasshaf22@gmail.com",
+  mobile: "+8801317110909",
   socials: [
-    { name: "GitHub", href: "https://github.com/yourusername", icon: Github },
+    { name: "GitHub", href: "https://github.com/Mubasshir14", icon: Github },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/mubasshiralkasshaf/",
       icon: Linkedin,
     },
     {
       name: "Facebook",
-      href: "https://facebook.com/yourusername",
+      href: "https://www.facebook.com/mubasshir.alkasshaf.5?mibextid=ZbWKwL",
       icon: Facebook,
     },
     {
       name: "Instagram",
-      href: "https://instagram.com/yourusername",
+      href: "https://instagram.com/mubasshiralkasshaf",
       icon: Instagram,
     },
-    { name: "WhatsApp", href: "https://wa.me/1234567890", icon: MessageCircle },
+    { name: "WhatsApp", href: "https://wa.me/01317110909", icon: MessageCircle },
   ],
-  address: "1234 Your Street, City, Country",
+  address: "Rangpur, Bangladesh",
 };
 
 const ContactMe = () => {

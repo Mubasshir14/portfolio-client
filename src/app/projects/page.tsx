@@ -269,7 +269,7 @@ const ProjectPages = () => {
                 </div>
               </div>
             ))
-          : projects?.slice(0, 3).map((project, index) => (
+          : projects?.map((project, index) => (
               <motion.div
                 key={project._id}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
