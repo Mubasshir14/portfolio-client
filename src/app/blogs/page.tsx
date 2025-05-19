@@ -94,13 +94,9 @@
 //         ))}
 //       </div>
 
-      
 //     </div>
 //   );
 // };
-
-
-
 
 // export default BlogsPages;
 
@@ -150,7 +146,9 @@ const Blogs = () => {
       <div className="flex justify-center items-center h-[50vh]">
         <div className="text-center space-y-2">
           <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-primary border-opacity-50 mx-auto" />
-          <p className="text-primary font-bold text-lg font-sansita">Loading Blogs...</p>
+          <p className="text-primary font-bold text-lg font-sansita">
+            Loading Blogs...
+          </p>
         </div>
       </div>
     );
@@ -178,7 +176,9 @@ const Blogs = () => {
       </motion.div>
 
       {blogs.length === 0 ? (
-        <p className="text-center text-gray-500 font-sansita text-lg">No blogs found.</p>
+        <p className="text-center text-gray-500 font-sansita text-lg">
+          No blogs found.
+        </p>
       ) : (
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
           {blogs.map((blog, index) => (
@@ -224,20 +224,6 @@ const Blogs = () => {
           ))}
         </div>
       )}
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        className="flex justify-center mt-8"
-      >
-        <Button
-          asChild
-          className="bg-gradient-to-r from-primary to-primary/60 text-white dark:text-black hover:from-secondary hover:to-primary text-lg font-sansita px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          <Link href="/blogs">Explore All Blogs</Link>
-        </Button>
-      </motion.div>
     </div>
   );
 };
