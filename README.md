@@ -8,6 +8,12 @@
 
 This is a personal portfolio and blog website built with Next.js and TypeScript. It features project showcases, blog management, authentication, and a user-friendly dashboard.
 
+![Portfolio](https://i.ibb.co/wh3J5nwX/Screenshot-12-6-2025-153128-developer-portfolio-eta-two-vercel-app.jpg)
+
+
+![Portfolio](https://i.ibb.co/W4LLv9L5/Screenshot-12-6-2025-153159-developer-portfolio-eta-two-vercel-app.jpg)
+
+
 ## Features of This Project
 
 - **Home Page:** Portfolio introduction, skills, projects, and resume download.
